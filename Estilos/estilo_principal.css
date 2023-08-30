@@ -1,0 +1,783 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+}
+
+body{
+    background-image: url(../Imagenes/compu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body:before{        /*Sub-elemento*/
+    content: "";    /*Sin esto no funciona el sub-elemento*/
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, #000000, #1d1d1d);
+    opacity: .9;
+    z-index: -1;
+}
+
+.neon{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 5em;
+    color: #7a7672;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.neon:hover{
+    color: #ffffff;
+    text-shadow: 0 0 10px #fefe89, 0 0 35px #fefe89, 0 0 65px #fefe89, 0 0 100px #fefe89;
+}
+
+.boton_neon{/*boton uno*/
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 135px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.boton_neon:hover{
+    color: #ffffff;
+    background: #f0b000;
+    box-shadow: 0 0 10px #f0b000, 0 0 40px #f0b000, 0 0 100px #f0b000;
+    transition-delay: 1s;
+}
+
+.boton_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f0b000);
+}
+
+.boton_neon:hover .span_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f0b000);
+}
+
+.boton_neon:hover .span_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f0b000);
+}
+
+.boton_neon:hover .span_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f0b000);
+}
+
+.boton_neon:hover .span_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
+
+.boton_dos_neon{
+    /*botondosneon*/margin-top: 150px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.boton_dos_neon:hover{
+    color: #ffffff;
+    background: #00ecff;
+    box-shadow: 0 0 10px #00ecff, 0 0 40px #00ecff, 0 0 100px #00ecff;
+    transition-delay: 1s;
+}
+
+.boton_dos_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_dos_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ecff);
+}
+
+.boton_dos_neon:hover .span_dos_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_dos_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #00ecff);
+}
+
+.boton_dos_neon:hover .span_dos_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_dos_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00ecff);
+}
+
+.boton_dos_neon:hover .span_dos_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_dos_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #00ecff);
+}
+
+.boton_dos_neon:hover .span_dos_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
+
+.boton_tres_neon{        /*boton tres neon*/
+    margin-top: 150px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.boton_tres_neon:hover{
+    color: #ffffff;
+    background: #df4374;
+    box-shadow: 0 0 10px #df4374, 0 0 40px #df4374, 0 0 100px #df4374;
+    transition-delay: 1s;
+}
+
+.boton_tres_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_tres_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #df4374);
+}
+
+.boton_tres_neon:hover .span_tres_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_tres_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #df4374);
+}
+
+.boton_tres_neon:hover .span_tres_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_tres_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #df4374);
+}
+
+.boton_tres_neon:hover .span_tres_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_tres_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #df4374);
+}
+
+.boton_tres_neon:hover .span_tres_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
+
+.boton_cuatro_neon{        /*boton cuatro neon*/
+    margin-top: 150px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.boton_cuatro_neon:hover{
+    color: #ffffff;
+    background: #859c0a;
+    box-shadow: 0 0 10px #859c0a, 0 0 40px #859c0a, 0 0 100px #859c0a;
+    transition-delay: 1s;
+}
+
+.boton_cuatro_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_cuatro_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #859c0a);
+}
+
+.boton_cuatro_neon:hover .span_cuatro_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_cuatro_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #859c0a);
+}
+
+.boton_cuatro_neon:hover .span_cuatro_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_cuatro_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #859c0a);
+}
+
+.boton_cuatro_neon:hover .span_cuatro_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_cuatro_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #859c0a);
+}
+
+.boton_cuatro_neon:hover .span_cuatro_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
+
+.boton_cinco_neon{        /*boton cinco neon*/
+    margin-top: 150px;
+    margin-left: 365px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.boton_cinco_neon:hover{
+    color: #ffffff;
+    background: #fafe25;
+    box-shadow: 0 0 10px #fafe25, 0 0 40px #fafe25, 0 0 100px #fafe25;
+    transition-delay: 1s;
+}
+
+.boton_cinco_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_cinco_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fafe25);
+}
+
+.boton_cinco_neon:hover .span_cinco_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_cinco_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fafe25);
+}
+
+.boton_cinco_neon:hover .span_cinco_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_cinco_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fafe25);
+}
+
+.boton_cinco_neon:hover .span_cinco_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_cinco_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fafe25);
+}
+
+.boton_cinco_neon:hover .span_cinco_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
+
+.boton_seis_neon{        /*boton seis neon*/
+    margin-top: 150px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.boton_seis_neon:hover{
+    color: #ffffff;
+    background: #0532dd;
+    box-shadow: 0 0 10px #0532dd, 0 0 40px #0532dd, 0 0 100px #0532dd;
+    transition-delay: 1s;
+}
+
+.boton_seis_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_seis_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0532dd);
+}
+
+.boton_seis_neon:hover .span_seis_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_seis_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0532dd);
+}
+
+.boton_seis_neon:hover .span_seis_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_seis_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0532dd);
+}
+
+.boton_seis_neon:hover .span_seis_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_seis_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0532dd);
+}
+
+.boton_seis_neon:hover .span_seis_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
+
+.boton_siete_neon{        /*boton siete neon*/
+    margin-top: 150px;
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #7a7672;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.boton_siete_neon:hover{
+    color: #ffffff;
+    background: #ff5ca1;
+    box-shadow: 0 0 10px #ff5ca1, 0 0 40px #ff5ca1, 0 0 100px #ff5ca1;
+    transition-delay: 1s;
+}
+
+.boton_siete_neon span{
+    position: absolute;
+    display: block;
+}
+
+.span_siete_uno{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff5ca1);
+}
+
+.boton_siete_neon:hover .span_siete_uno{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.span_siete_tres{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ff5ca1);
+}
+
+.boton_siete_neon:hover .span_siete_tres{
+    right: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .5s;
+}
+
+.span_siete_dos{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ff5ca1);
+}
+
+.boton_siete_neon:hover .span_siete_dos{
+    top: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .25s;
+}
+
+.span_siete_cuatro{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ff5ca1);
+}
+
+.boton_siete_neon:hover .span_siete_cuatro{
+    bottom: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: .75s;
+}
